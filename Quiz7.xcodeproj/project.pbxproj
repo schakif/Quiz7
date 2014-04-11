@@ -25,6 +25,7 @@
 		BF1FBC9E18F5CB7300104FB5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1FBC7918F5CB7300104FB5 /* CoreData.framework */; };
 		BF1FBCA618F5CB7400104FB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF1FBCA418F5CB7400104FB5 /* InfoPlist.strings */; };
 		BF1FBCA818F5CB7400104FB5 /* Quiz7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1FBCA718F5CB7400104FB5 /* Quiz7Tests.m */; };
+		BF1FBCB318F5CD3400104FB5 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1FBCB218F5CD3400104FB5 /* Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		BF1FBCA318F5CB7400104FB5 /* Quiz7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quiz7Tests-Info.plist"; sourceTree = "<group>"; };
 		BF1FBCA518F5CB7400104FB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF1FBCA718F5CB7400104FB5 /* Quiz7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz7Tests.m; sourceTree = "<group>"; };
+		BF1FBCB118F5CD3400104FB5 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		BF1FBCB218F5CD3400104FB5 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				BF1FBC9118F5CB7300104FB5 /* Quiz7DetailViewController.m */,
 				BF1FBC9318F5CB7300104FB5 /* Images.xcassets */,
 				BF1FBC8A18F5CB7300104FB5 /* Quiz7.xcdatamodeld */,
+				BF1FBCB118F5CD3400104FB5 /* Task.h */,
+				BF1FBCB218F5CD3400104FB5 /* Task.m */,
 				BF1FBC7C18F5CB7300104FB5 /* Supporting Files */,
 			);
 			path = Quiz7;
@@ -268,6 +273,7 @@
 				BF1FBC8C18F5CB7300104FB5 /* Quiz7.xcdatamodeld in Sources */,
 				BF1FBC8F18F5CB7300104FB5 /* Quiz7MasterViewController.m in Sources */,
 				BF1FBC8218F5CB7300104FB5 /* main.m in Sources */,
+				BF1FBCB318F5CD3400104FB5 /* Task.m in Sources */,
 				BF1FBC8618F5CB7300104FB5 /* Quiz7AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

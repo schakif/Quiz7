@@ -14,6 +14,11 @@
 
 @implementation Quiz7DetailViewController
 
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
 #pragma mark - Managing the detail item
 
 - (void)setDetailItem:(id)newDetailItem
@@ -30,15 +35,18 @@
 {
     // Update the user interface for the detail item.
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
-    }
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.nameTextField setText:_detailItem.name];
+    [self.urgencyLabel setText:[NSString stringWithFormat:@"Urgency: %.0f", _detailItem.urgency]];
+    self.urgencySlider.value = _detailItem.urgency;
+    self.datePicker.date = _detailItem.dueDate;
+    self.navigationItem.title = _detailItem.name;
     [self configureView];
 }
 
@@ -48,4 +56,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)save:(id)sender {
+    _detailItem.name = self.nameTextField.text;
+    _detailItem.urgency = self.urgencySlider.value;
+    _detailItem.dueDate = self.datePicker.date;
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)sliderChanged:(id)sender {
+    UISlider *s = sender;
+    [self.urgencyLabel setText:[NSString stringWithFormat:@"Urgency: %.0f", s.value]];
+}
 @end
